@@ -36,6 +36,7 @@
             <ul class="navbar-links" role="list">
                 <li><a href="#como-funciona" data-i18n="nav.how">Cómo funciona</a></li>
                 <li><a href="#beneficios" data-i18n="nav.benefits">Beneficios</a></li>
+                <li><a href="#sensores" data-i18n="nav.sensors">Sensores IoT</a></li>
                 <li><a href="#precios" data-i18n="nav.pricing">Precios</a></li>
                 <li><a href="#testimonios" data-i18n="nav.testimonials">Testimonios</a></li>
                 <li><a href="#sobre-nosotros" data-i18n="nav.about">Sobre nosotros</a></li>
@@ -69,6 +70,7 @@
         <ul class="nav-drawer-links" role="list">
             <li><a href="#como-funciona" class="drawer-nav-link" data-i18n="nav.how">Cómo funciona</a></li>
             <li><a href="#beneficios" class="drawer-nav-link" data-i18n="nav.benefits">Beneficios</a></li>
+            <li><a href="#sensores" class="drawer-nav-link" data-i18n="nav.sensors">Sensores IoT</a></li>
             <li><a href="#precios" class="drawer-nav-link" data-i18n="nav.pricing">Precios</a></li>
             <li><a href="#testimonios" class="drawer-nav-link" data-i18n="nav.testimonials">Testimonios</a></li>
             <li><a href="#sobre-nosotros" class="drawer-nav-link" data-i18n="nav.about">Sobre nosotros</a></li>
@@ -384,6 +386,88 @@
         </div>
     </section>
 
+    <!-- SENSORES IoT -->
+    <section id="sensores" class="sensors section">
+        <div class="container">
+            <div class="section-header">
+                <span class="label label-blue fade-in" data-i18n="sensors.label">Solución IoT</span>
+                <h2 class="fade-in fade-in-delay-1" data-i18n="sensors.title">Sensores IoT que anticipan el desabastecimiento</h2>
+                <p class="fade-in fade-in-delay-2" data-i18n="sensors.subtitle">Hoy el abastecimiento depende de que alguien detecte manualmente cuándo el tanque está por agotarse. FullTank lo automatiza con sensores inteligentes instalados en campo.</p>
+            </div>
+
+            <div class="how-steps-wrapper fade-in sensors-flow">
+                <div class="step-block">
+                    <div class="step-num-circle">1</div>
+                    <h3 data-i18n="sensors.flow1.title">El sensor mide el nivel</h3>
+                    <p data-i18n="sensors.flow1.text">El sensor reporta el nivel de combustible del tanque a la plataforma con una frecuencia definida. El dato queda disponible en tiempo real.</p>
+                </div>
+                <div class="step-arrow">&rarr;</div>
+                <div class="step-block">
+                    <div class="step-num-circle">2</div>
+                    <h3 data-i18n="sensors.flow2.title">Alerta al cruzar el umbral</h3>
+                    <p data-i18n="sensors.flow2.text">Cuando el nivel cae por debajo del umbral configurado (por ejemplo, 20%), el comprador recibe una alerta inmediata.</p>
+                </div>
+                <div class="step-arrow">&rarr;</div>
+                <div class="step-block">
+                    <div class="step-num-circle">3</div>
+                    <h3 data-i18n="sensors.flow3.title">Pedido automático</h3>
+                    <p data-i18n="sensors.flow3.text">Si el comprador tiene un proveedor favorito, FullTank genera la solicitud de pedido automáticamente. Si no, la alerta queda esperando su decisión manual.</p>
+                </div>
+            </div>
+
+            <div class="sensors-grid">
+                <article class="sensor-card fade-in">
+                    <div class="mb-16">
+                        <span class="badge badge-blue" data-i18n="sensors.mp.tag">Sensor de presión hidrostática</span>
+                    </div>
+                    <h3 data-i18n="sensors.mp.name">MPX5050DP (NXP/Freescale)</h3>
+                    <p class="sensor-desc" data-i18n="sensors.mp.desc">Mide la presión hidrostática y calcula el nivel del líquido de forma continua, obteniendo el porcentaje real del tanque.</p>
+                    <ul class="check-list" role="list">
+                        <li><span class="icon-check">&#10003;</span> <span data-i18n="sensors.mp.pro1">Lectura continua del porcentaje real del tanque</span></li>
+                        <li><span class="icon-check">&#10003;</span> <span data-i18n="sensors.mp.pro2">Rango de presión y temperatura apto para uso en exteriores</span></li>
+                    </ul>
+                    <ul class="sensor-cons" role="list">
+                        <li data-i18n="sensors.mp.con1">Componente crudo: requiere circuito propio y calibración por tanque</li>
+                        <li data-i18n="sensors.mp.con2">Contacto directo con el combustible, con riesgo de degradación de sellos</li>
+                        <li data-i18n="sensors.mp.con3">Sin conectividad integrada: necesita microcontrolador aparte</li>
+                    </ul>
+                </article>
+
+                <article class="sensor-card fade-in fade-in-delay-1">
+                    <div class="mb-16">
+                        <span class="badge badge-amber" data-i18n="sensors.cq.tag">Sensor capacitivo sin contacto</span>
+                    </div>
+                    <h3 data-i18n="sensors.cq.name">CQRobot Sensor de Nivel No-Contacto</h3>
+                    <p class="sensor-desc" data-i18n="sensors.cq.desc">Detecta el líquido sin tocar el tanque: instalación no invasiva, sin corrosión ni fugas.</p>
+                    <ul class="check-list" role="list">
+                        <li><span class="icon-check">&#10003;</span> <span data-i18n="sensors.cq.pro1">Sin contacto con el combustible: sin corrosión ni fugas</span></li>
+                        <li><span class="icon-check">&#10003;</span> <span data-i18n="sensors.cq.pro2">Módulo terminado, económico y fácil de integrar con Arduino o Raspberry Pi</span></li>
+                    </ul>
+                    <ul class="sensor-cons" role="list">
+                        <li data-i18n="sensors.cq.con1">Solo detecta presencia o ausencia de líquido, no un porcentaje continuo</li>
+                        <li data-i18n="sensors.cq.con2">Funciona solo en paredes no metálicas, como plástico o vidrio</li>
+                        <li data-i18n="sensors.cq.con3">Requiere confirmar el material del tanque antes de instalarlo</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="sensors-extra">
+                <div class="sensor-data fade-in">
+                    <h3 data-i18n="sensors.data.title">Datos que se convierten en predicción</h3>
+                    <p data-i18n="sensors.data.text">El historial de consumo por cliente es un activo estratégico: permite desarrollar modelos predictivos que anticipan cuándo un usuario necesitará abastecimiento antes de alcanzar niveles críticos, reduciendo el desabastecimiento y mejorando la planificación del suministro.</p>
+                </div>
+                <div class="sensor-stack fade-in fade-in-delay-1">
+                    <h3 data-i18n="sensors.stack.title">Arquitectura propuesta</h3>
+                    <ul class="sensor-stack-list" role="list">
+                        <li class="chip chip-approved" data-i18n="sensors.stack.web">Web: Angular &amp; Spring Boot</li>
+                        <li class="chip chip-dispatched" data-i18n="sensors.stack.mobile">Mobile: Flutter (Dart)</li>
+                        <li class="chip chip-pending" data-i18n="sensors.stack.iot">IoT: C++ &amp; Python</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- DUAL SEGMENT -->
     <section id="segmentos" class="dual-segment section">
         <div class="container">
@@ -523,71 +607,6 @@
                         </div>
                         <div class="about-upc-badge" data-i18n="about.upc">&#127979; Equipo PrimeFuel</div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="team-video-section">
-        <h2 data-i18n="team.video">Video sobre el equipo</h2>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/pZbrpTs73ZY?si=XwPXtCC5tG0UxSVT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </section>
-
-    <!-- EQUIPO -->
-    <section id="equipo" class="team-section section">
-        <div class="container">
-            <div class="section-header">
-                <span class="label label-blue fade-in" data-i18n="team.label">El Equipo</span>
-                <h2 class="fade-in fade-in-delay-1" data-i18n="team.title">Conoce a quienes hacen posible FullTank</h2>
-                <p class="fade-in fade-in-delay-2" data-i18n="team.subtitle">Somos 5 profesionales de Ingeniería de Software, parte del equipo de PrimeFuel, comprometidos con digitalizar el sector energético.</p>
-            </div>
-
-            <div class="team-grid">
-                <div class="team-card fade-in">
-                    <div class="team-photo-wrap">
-                        <img class="team-photo" src="img/foto-a.png" alt="Jose Gustavo Asto Jacome">
-                    </div>
-                    <div class="team-name">Jose Gustavo Asto Jacome</div>
-                    <div class="team-career" data-i18n="team.career">Ing. de Software</div>
-                    <p class="team-desc" data-i18n="team.m1.desc">Profesional con pasión por la ciberseguridad e IA. Su fortaleza es liderar equipos eficazmente. Perseverante y dedicado, siempre listo para entregar proyectos exitosos.</p>
-                </div>
-
-                <div class="team-card fade-in fade-in-delay-1">
-                    <div class="team-photo-wrap">
-                        <img class="team-photo" src="img/milenko_foto.png" alt="Cayanchi Avila Milenko Rubén">
-                    </div>
-                    <div class="team-name">Cayanchi Avila Milenko Rubén</div>
-                    <div class="team-career" data-i18n="team.career">Ing. de Software</div>
-                    <p class="team-desc" data-i18n="team.m2.desc">Colaborativo y adaptable. Disfruta aportar ideas y tiene sólida base en C++ y Python, siempre buscando soluciones eficientes y simples.</p>
-                </div>
-
-                <div class="team-card fade-in fade-in-delay-2">
-                    <div class="team-photo-wrap">
-                        <img class="team-photo" src="img/fotoDiego.jpg" alt="Herrera Enriquez Diego Fernando">
-                    </div>
-                    <div class="team-name">Herrera Enriquez Diego Fernando</div>
-                    <div class="team-career" data-i18n="team.career">Ing. de Software</div>
-                    <p class="team-desc" data-i18n="team.m3.desc">Profesional curiosa con experiencia en gestión de proyectos y metodologías ágiles. Enfocada en desarrollo web y análisis de datos.</p>
-                </div>
-
-                <div class="team-card fade-in fade-in-delay-3">
-                    <div class="team-photo-wrap">
-                        <img class="team-photo" src="img/FotoAlberto.jpg" alt="Alberto Alejandro Ponce Perales">
-                    </div>
-                    <div class="team-name">Alberto Alejandro Ponce Perales</div>
-                    <div class="team-career" data-i18n="team.career">Ing. de Software</div>
-                    <p class="team-desc" data-i18n="team.m4.desc">Enfocado en el desarrollo de soluciones tecnológicas innovadoras. Conocimientos en Python y C++, comprometido con la calidad del software.</p>
-                </div>
-
-                <div class="team-card fade-in fade-in-delay-4">
-                    <div class="team-photo-wrap">
-                        <img class="team-photo" src="img/Brayan.png" alt="Brayan Alexis Corvacho Damian">
-                    </div>
-                    <div class="team-name">Brayan Alexis Corvacho Damian</div>
-                    <div class="team-career" data-i18n="team.career">Ing. de Software</div>
-                    <p class="team-desc" data-i18n="team.m5.desc">Ingeniero de Software, parte del equipo de PrimeFuel, con habilidades en desarrollo y diseño de sistemas. Comprometido con la innovación continua.</p>
                 </div>
             </div>
         </div>
@@ -907,7 +926,6 @@
                     <h4 data-i18n="footer.col2.title">Empresa</h4>
                     <ul role="list">
                         <li><a href="#" data-i18n="footer.col2.li1">Sobre PrimeFuel</a></li>
-                        <li><a href="#" data-i18n="footer.col2.li2">Equipo</a></li>
                         <li><a href="#" data-i18n="footer.col2.li3">Blog</a></li>
                         <li><a href="#" data-i18n="footer.col2.li4">Carreras</a></li>
                         <li><a href="#contacto" data-i18n="footer.col2.li5">Contacto</a></li>
