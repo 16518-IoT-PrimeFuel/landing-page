@@ -256,36 +256,44 @@
     <!-- EL PROBLEMA -->
     <section id="problema" class="problem section">
         <div class="container">
-            <div class="section-header">
-                <span class="label label-amber fade-in" data-i18n="problem.label">El Problema</span>
-                <h2 class="fade-in fade-in-delay-1" data-i18n="problem.title">¿Te suena familiar esta situación?</h2>
-                <p class="fade-in fade-in-delay-2" data-i18n="problem.subtitle">Así gestiona el combustible la mayoría de empresas hoy en día…</p>
-            </div>
+            <header class="problem-lead">
+                <h2 data-i18n="problem.title">¿Te suena familiar esta situación?</h2>
+                <p data-i18n="problem.subtitle">Así gestiona el combustible la mayoría de empresas hoy en día…</p>
+            </header>
 
-            <div class="grid-2">
-                <div class="pain-card fade-in">
-                    <h3 data-i18n="problem.p1.title">Pedidos perdidos en WhatsApp</h3>
-                    <p data-i18n="problem.p1.text">Mensajes enterrados entre conversaciones. Sin confirmación formal ni trazabilidad de qué se pidió, cuándo y a quién.</p>
-                </div>
-                <div class="pain-card fade-in fade-in-delay-1">
-                    <h3 data-i18n="problem.p2.title">Excel interminable y desconectado</h3>
-                    <p data-i18n="problem.p2.text">Planillas duplicadas, datos desactualizados y errores de digitación que nadie detecta hasta que ya es demasiado tarde.</p>
-                </div>
-                <div class="pain-card fade-in fade-in-delay-2">
-                    <h3 data-i18n="problem.p3.title">Llamadas para preguntar "¿dónde está mi pedido?"</h3>
-                    <p data-i18n="problem.p3.text">Horas perdidas en seguimiento manual. Ninguna visibilidad real del estado de la entrega.</p>
-                </div>
-                <div class="pain-card fade-in fade-in-delay-3">
+            <div class="problem-split">
+                <article class="problem-crisis">
+                    <p class="problem-crisis-meta" data-i18n="problem.p4.meta">Parada de obra</p>
                     <h3 data-i18n="problem.p4.title">Errores que paralizan operaciones</h3>
                     <p data-i18n="problem.p4.text">Un error en el pedido puede detener una obra entera. Las consecuencias económicas son devastadoras.</p>
-                </div>
+                </article>
+
+                <ul class="problem-ledger" role="list">
+                    <li>
+                        <span class="problem-channel" data-i18n="problem.p1.channel">WhatsApp</span>
+                        <div>
+                            <h3 data-i18n="problem.p1.title">Pedidos perdidos en WhatsApp</h3>
+                            <p data-i18n="problem.p1.text">Mensajes enterrados entre conversaciones. Sin confirmación formal ni trazabilidad de qué se pidió, cuándo y a quién.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="problem-channel" data-i18n="problem.p2.channel">Excel</span>
+                        <div>
+                            <h3 data-i18n="problem.p2.title">Excel interminable y desconectado</h3>
+                            <p data-i18n="problem.p2.text">Planillas duplicadas, datos desactualizados y errores de digitación que nadie detecta hasta que ya es demasiado tarde.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="problem-channel" data-i18n="problem.p3.channel">Teléfono</span>
+                        <div>
+                            <h3 data-i18n="problem.p3.title">Llamadas para preguntar "¿dónde está mi pedido?"</h3>
+                            <p data-i18n="problem.p3.text">Horas perdidas en seguimiento manual. Ninguna visibilidad real del estado de la entrega.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
 
-            <div class="problem-transition fade-in">
-                <span class="problem-transition-arrow" data-i18n="problem.cta">
-                    FullTank elimina todo esto &rarr;
-                </span>
-            </div>
+            <a href="#como-funciona" class="problem-cta" data-i18n="problem.cta">FullTank elimina todo esto &rarr;</a>
         </div>
     </section>
 
